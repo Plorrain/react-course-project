@@ -35,9 +35,9 @@ class App extends Component {
     family
   }
 
-  handleClick = () => {
+  handleClick = (num) => {
     const family = { ...this.state.family }
-    family.member1.age += 1
+    family.member1.age += num
     this.setState({ family })
 }
 
@@ -63,7 +63,7 @@ render() {
         <Member
           name= {family.member5.name}
           age= {family.member5.age} />
-        <Button aging={this.handleClick} />
+        <Button aging={()=> this.handleClick(2)} />
       </div>
     );
   }
