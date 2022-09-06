@@ -34,17 +34,25 @@ class App extends Component {
     family
   }
 
+  handleClick = () => {
+    console.log('Click')
+}
+
 render() {
+  const { family } = this.state
   return (
       <div className="App">
         <h1>React App</h1>
-        <Member name= {this.state.family.member1.name} />
-        <Member name= 'Johan'/>
-        <Member name= 'Marine'/>
-        <Member name= 'Anouk'>
+        <Member name= {family.member1.name} />
+        <Member name= {family.member2.name} />
+        <Member name= {family.member3.name} />
+        <Member name= {family.member4.name}>
           <span>I am a Bouk</span>
         </Member>
-        <Member name= 'Airi'/>
+        <Member name= {family.member5.name} />
+        <button onClick={this.handleClick}>
+          Add a year
+        </button>
       </div>
     );
   }

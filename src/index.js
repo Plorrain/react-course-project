@@ -7,12 +7,12 @@ import reportWebVitals from './reportWebVitals';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App title='Mon app famille' />
+    <App />
   </React.StrictMode>
 );
 reportWebVitals();
 
-// Below code would put this app on react 18 version (coudl avoid bugs)
+// Below code would put this app on react 18 version (could avoid bugs)
 
 // import { StrictMode } from "react";
 // import { createRoot } from "react-dom/client";
