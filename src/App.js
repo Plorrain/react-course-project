@@ -9,7 +9,9 @@ function App() {
       <Member name= 'Cyril'/>
       <Member name= 'Johan'/>
       <Member name= 'Marine'/>
-      <Member name= 'Anouk'/>
+      <Member name= 'Anouk'>
+        <p>I am a Bouk</p>
+      </Member>
       <Member name= 'Airi'/>
     </div>
   );

@@ -1,10 +1,13 @@
-import React from 'react'
+import React, { Fragment } from 'react'
 
-const Member = ({ name }) => {
+const Member = ({ name, children }) => {
   return (
-    <h2>
-      Members of my family: {name}
-    </h2>
+    <Fragment>
+      <h2>
+        Members of my family: {name}
+        <p>{children}</p>
+      </h2>
+    </Fragment>
   )
 }
 
