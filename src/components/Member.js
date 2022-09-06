@@ -5,7 +5,7 @@ const Member = ({ name, children }) => {
     <Fragment>
       <h2>
         Members of my family: {name}
-        <p>{children}</p>
+        { children ? <span>{children}</span> : <Fragment /> }
       </h2>
     </Fragment>
   )

@@ -10,7 +10,7 @@ function App() {
       <Member name= 'Johan'/>
       <Member name= 'Marine'/>
       <Member name= 'Anouk'>
-        <p>I am a Bouk</p>
+        <span>I am a Bouk</span>
       </Member>
       <Member name= 'Airi'/>
     </div>

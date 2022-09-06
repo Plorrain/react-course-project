@@ -11,3 +11,19 @@ root.render(
   </React.StrictMode>
 );
 reportWebVitals();
+
+// Below code would put this app on react 18 version (coudl avoid bugs)
+
+// import { StrictMode } from "react";
+// import { createRoot } from "react-dom/client";
+
+// import App from "./App";
+
+// const rootElement = document.getElementById("root");
+// const root = createRoot(rootElement);
+
+// root.render(
+//   <StrictMode>
+//     <App />
+//   </StrictMode>
+// );
