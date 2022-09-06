@@ -1,3 +1,4 @@
+import React, { Component } from 'react';
 import './App.css';
 import Member from './components/Member';
 
@@ -21,22 +22,23 @@ const family = {
   member5: {
     name: 'Airi',
     age: 28
-  },
+  }
 }
 
-function App() {
+class App extends Component {
   // line 7 creates a bug I don't know how to fix on
   // the console/index.js/line 11 below {title}
   // const { title } = this.props
 
-  // state = {
-  //   family
-  // }
+  state = {
+    family
+  }
 
+render() {
   return (
       <div className="App">
         <h1>React App</h1>
-        <Member name= 'Cyril' />
+        <Member name= {this.state.family.member1.name} />
         <Member name= 'Johan'/>
         <Member name= 'Marine'/>
         <Member name= 'Anouk'>
@@ -46,6 +48,6 @@ function App() {
       </div>
     );
   }
-
+}
 
 export default App
