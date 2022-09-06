@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import './App.css';
 import Member from './components/Member';
+import Button from './components/Button';
 
 const family = {
   member1: {
@@ -62,9 +63,7 @@ render() {
         <Member
           name= {family.member5.name}
           age= {family.member5.age} />
-        <button onClick={this.handleClick}>
-          Add a year
-        </button>
+        <Button aging={this.handleClick} />
       </div>
     );
   }
