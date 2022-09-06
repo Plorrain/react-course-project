@@ -6,7 +6,11 @@ function App() {
   return (
     <div className="App">
       <h1>React App</h1>
-      <Member />
+      <Member name= 'Cyril'/>
+      <Member name= 'Johan'/>
+      <Member name= 'Marine'/>
+      <Member name= 'Anouk'/>
+      <Member name= 'Airi'/>
     </div>
   );
 }

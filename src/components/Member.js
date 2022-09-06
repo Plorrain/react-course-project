@@ -1,9 +1,9 @@
 import React from 'react'
 
-const Member = () => {
+const Member = ({ name }) => {
   return (
     <h2>
-      Members of my family
+      Members of my family: {name}
     </h2>
   )
 }
