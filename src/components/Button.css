@@ -1,0 +1,6 @@
+button {
+  background-color: rgb(128, 186, 240);
+  border-radius: 5px;
+  padding: 6px;
+  box-shadow: 3px 3px lightgray;
+}
